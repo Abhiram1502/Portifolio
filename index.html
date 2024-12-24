@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo-img" src="images/logo1.png" alt="">
+            <h3 class="logo-para">bhi<span class="dot">.</span></h3>
+        </div>
+        <div class="links">
+            <ul id="links">
+                <i onclick="hideMenu()" id="cross" class="fa-solid fa-x"></i>
+                <li class="link active"><a href="">Home</a></li>
+                <li class="link"><a href="">About</a></li>
+                <li class="link"><a href="">Skills</a></li>
+                <li class="link"><a href="">Projects</a></li>
+                <li class="link"><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <i onclick="showMenu()" id="bars" class="fa-solid fa-bars"></i>
+    </nav>
+    <section class="hero-section">
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-head">Hey I'm <span class="name">Abhiram</span></h2>
+                <h3 class="hero-shead">I'm a <span class="name">Developer</span></h3>
+                <p class="hero-para">I'm an ethusiastic Bhachelor's degree candidate in Computer Science <br>and Engineering from Vellore Institute of Technlogy Amaravati , Andhra Pradesh.<br>I'm a passionate web developer creating modern, user-friendly websites.</p>
+            </div>
+            <div class="hero-img">
+                <img class="image-hero" src="images/image (5).png" alt="Hero-image">
+                <div class="dsn"></div>
+            </div>
+        </div>
+    </section>
+    <section class="about-section">
+        <div class="about">
+            <div class="about-img">
+                <img src="images/about.png" alt="about-image">
+            </div>
+            <div class="about-content">
+                <h3 class="about-head">About Me</h3>
+                <p class="about-para">Passionate web developer dedicated to creating innovative, visually <br>appealing websites while blending creativity and functionality for <br>seamless user experiences.</p>
+                <ul class="about-details">
+                    <li id="Skill" class="d activ" onclick="showSkills()">Skills</li>
+                    <li id="Experience" class="d" onclick="showExp()">Experience</li>
+                    <li id="Education" class="d" onclick="showEdu()">Education</li>
+                </ul>
+                <div class="details-content">
+                    <div class="skills" id="skills">
+                        <p class="details-head">UI/UX</p>
+                        <p class="details-para">Designing Website Interface</p>
+                        <p class="details-head">Web Development</p>
+                        <p class="details-para">Web App Development</p>
+                        <p class="details-head">Database Managment</p>
+                        <p class="details-para">MySQl , Oracle</p>
+                    </div>
+                    <div class="exp" id="exp">
+                        <p class="details-head">2024 - Current</p>
+                        <p class="details-para">Web Developer Intern at Codsoft</p>
+                        <p class="details-head">2023 - 2024</p>
+                        <p class="details-para">Project Lead at Edu-Guide</p>
+                        <p class="details-head">2023 - 2024</p>
+                        <p class="details-para">Frontend Developer for WheelsAway Car rentals Website</p>
+                    </div>
+                    <div class="edu" id="edu">
+                        <p class="details-head">2023 - Current</p>
+                        <p class="details-para">Btech-CSE at VITAP-University</p>
+                        <p class="details-head">2021 - 2023</p>
+                        <p class="details-para">Intermediate at Bhashyam Junior College</p>
+                        <p class="details-head">2020 - 2021</p>
+                        <p class="details-para">SSC at Dreamz High School</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
