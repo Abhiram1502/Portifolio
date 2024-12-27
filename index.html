@@ -48,12 +48,13 @@
     </section>
     <section class="about-section">
         <div class="about">
+            <h3 class="about-head1">About Me</h3>
             <div class="about-img">
                 <img src="images/about.png" alt="about-image">
             </div>
             <div class="about-content">
                 <h3 class="about-head">About Me</h3>
-                <p class="about-para">Passionate web developer dedicated to creating innovative, visually <br>appealing websites while blending creativity and functionality for <br>seamless user experiences.</p>
+                <p class="about-para">Passionate web developer dedicated to creating innovative, visually <br>appealing websites while blending creativity and functionality for seamless user experiences.</p>
                 <ul class="about-details">
                     <li id="Skill" onclick="showSkills()">Skills</li>
                     <li id="Experience" onclick="showExp()">Experience</li>
@@ -159,16 +160,22 @@
                     <a href="https://www.facebook.com/profile.php?id=100072073112135&mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="https://x.com/Abhiram0615?t=aqT2PIu80ch2M-L5l9_jFA&s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
-                <button class="work-button">Download Resume</button>
+                <button class="contact-button">Download Resume</button>
             </div>
             <div class="contact-right">
-                <input class="name" type="text" placeholder="Your Name">
-                <input class="mail" type="mail" placeholder="Your Email">
-                <textarea class="message" rows="7" placeholder="Message"></textarea>
-                <button type="submit" class="contact-button">Submit</button>
+                <form action="">
+                    <input class="name" name="name" type="text" placeholder="Your Name" required>
+                    <input class="mail" name="mail" type="mail" placeholder="Your Email" required>
+                    <textarea class="message" rows="7" placeholder="Message"></textarea>
+                    <button type="submit" class="contact-button">Submit</button>
+                </form>
             </div>
         </div>
     </section>
+    <footer>
+        <hr class="line">
+        <p>© Abhiram Portifolio, All Right Reserved</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

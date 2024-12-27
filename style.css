@@ -94,12 +94,16 @@ nav ul li a:hover::after{
     font-weight: bold;
     font-size: 20px;
 }
+/*----------Hero-Section------------------*/
 .hero{
     background-color: #1d3557;
     color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 6%;
 }
-/*----------Hero-Section------------------*/
-
 .hero-img img{
     height: 330px;
     z-index: 1;
@@ -125,7 +129,7 @@ nav ul li a:hover::after{
     height: 250px;
     width: 360px;
     position: absolute;
-    top: 50vh;
+    margin-top: 12%;
     background-image: linear-gradient(140deg,#ffb703,#457b9d,#2a6082);
     border-top-left-radius: 100%;
     border-top-right-radius: 55%;
@@ -165,12 +169,6 @@ nav ul li a:hover::after{
     animation-delay: 1s;
     animation-fill-mode: forwards;
 }
-.hero{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 85vh;
-}
 .hero-contact{
     margin-top: 20px;
     display: flex;
@@ -187,10 +185,10 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     animation: popIn 2s ease;
+    margin-right: 20px;
 }
 .hero-contact a{
     text-decoration: none;
-    margin-right: 20px;
 }
 .hero-contact i:hover{
     scale: 1.1;
@@ -237,10 +235,14 @@ nav ul li a:hover::after{
 
 .about-section{
     background-color: var(--blue);
-    height: 85vh;
     display: flex;
     justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
     align-items: center;
+}
+.about-head1{
+    display: none;
 }
 .about-img img{
     height: 360px;
@@ -342,10 +344,11 @@ nav ul li a:hover::after{
 .service-section{
     color: var(--white);
     background-color: var(--blue);
-    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
+    padding-top: 10px;
 }
 .service{
     padding: 20px;
@@ -402,8 +405,7 @@ nav ul li a:hover::after{
     justify-content: center;
 }
 .work{
-    padding: 20px;
-    padding-bottom: 40px;
+    padding: 43px;
     display: flex;
     align-items: left;
     flex-direction: column;
@@ -411,8 +413,8 @@ nav ul li a:hover::after{
 }
 .work-head{
     font-size: 35px;
-    margin: 43px;
-    margin-bottom: 0px;
+    margin: 10px;
+    margin-left: 50px;
 }
 .work-content{
     display: flex;
@@ -458,7 +460,7 @@ nav ul li a:hover::after{
 .work-para{
     font-size: 17px;
     margin: 15px;
-    margin-left: 43px;
+    margin-left: 50px;
     margin-right: 50px;
 }
 .whead{
@@ -531,9 +533,7 @@ nav ul li a:hover::after{
     color: var(--white);
 }
 .contact{
-    padding: 20px;
-    padding-left: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: start;
@@ -584,6 +584,26 @@ nav ul li a:hover::after{
     margin-left:20px;
 }
 
+/*-------------------footer------------------*/
+
+footer{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    margin: 30px;
+    margin-top: 0px;
+    border: none;
+    height: 1px;
+    background-color: #2a6082;
+}
+footer p{
+    color: #f1faee94;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
 @media (max-width:800px){
     #bars{
         display: block;
@@ -600,6 +620,7 @@ nav ul li a:hover::after{
         top: 0;
         margin: 0;
         position: absolute;
+        z-index: 4;
     }
     #cross{
         width: 150px;
@@ -616,5 +637,379 @@ nav ul li a:hover::after{
     }
     nav ul li a::after{
         background-color: #1d3557;
+    }
+
+    /*----------Hero-Section------------------*/
+    
+    .hero-img img{
+        height: 220px;
+        margin-right: 10px;
+    }
+    .dsn{
+        height: 165px;
+        width: 245px;
+        margin-top: 13%;
+    }
+    .hero-content{
+        margin-left: 20px;
+        width: 57vw;
+    }
+    .hero-head{
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    .hero-img{
+        z-index: 1;
+        width: 24vw;
+    }
+    .hero-shead{
+        font-size: 22px;
+    }
+    .hero-para{
+        font-size: 13px;
+    }
+    .hero-contact i{
+        font-size: 17px;
+        height: 17px;
+        width: 17px;
+    }
+
+    /*-------------------About-------------------*/
+    
+    .about-img img{
+        height: 280px;
+        margin: 10px;
+    }
+    .about{
+        padding: 30px;
+    }
+    .about-content{
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .about-head{
+        font-size: 30px;
+    }
+    .about-para{
+        font-size: 14px;
+    }
+    .about-details{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .about ul li{
+        margin-right: 40px;
+        font-size: 16.5px;
+    }
+    .details-content{
+        margin-top: 5px;
+    }
+    .details-head{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .details-para{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    
+    /*--------------Services----------------*/
+    
+    .service-section{
+        padding: 20px;
+        padding-top: 10px;
+    }
+    .service{
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .service-head{
+        font-size: 30px;
+        margin: 25px;
+    }
+    .service1{
+        width: 25%;
+        height: 150px;
+        padding: 15px;
+    }
+    .service-content i{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+    .svhead{
+        font-size: 19px;
+        margin-bottom: 6px;
+    }
+    .spara{
+        font-size: 13px;
+    }
+    /*------------------My_WORK----------------------*/
+    
+    .work{
+        padding: 20px;
+    }
+    .work-head{
+        font-size: 30px;
+        margin: 5px;
+        margin-left: 35px;
+    }
+    .work1,.work2,.work3{
+        width: 27%;
+        height: 250px;
+    }
+    .work-content i{
+        font-size: 17px;
+        padding: 8px;
+    }
+    .work-para{
+        font-size: 14px;
+        margin: 10px;
+        margin-left: 35px;
+        margin-right: 50px;
+    }
+    .whead{
+        font-size: 16px;
+    }
+    .wpara{
+        font-size: 12px;
+    }
+    .work-details{
+        height: 250px;
+    }
+    .work-button{
+        padding: 7px;
+        width: 110px;
+    }
+
+    /*--------------contact------------------*/
+    
+    .contact-head{
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .contact i{
+        font-size: 16px;
+        margin-right: 10px;
+    }
+    .contact-button{
+        margin-top: 15px;
+        width: 145px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:500px){
+    .logo-img{
+        height: 50px;
+        width: 40px;
+    }
+    .logo-para{
+        font-size: 40px;
+    }
+    .dot{
+        font-size: 40px;
+    }
+    .logo{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    /*----------Hero-Section------------------*/
+    
+    .hero{
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 6%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-img img{
+        height: 310px;
+        border-radius: 20%;
+        margin-right: 0px;
+    }
+    .hero-img{
+        z-index: 1;
+        width:90%;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+    .dsn{
+        height: 250px;
+        width: 360px;
+        margin-top: 33%;
+    }
+    .hero-content{
+        margin-left: 0px;
+        width: 90%;
+    }
+    .hero-para{
+        font-size: 14px;
+    }
+    .hero-contact{
+        justify-content: center;
+    }
+
+    /*-------------------About-------------------*/
+    
+    .about-img img{
+        height: 300px;
+        margin: 10px;
+        margin-top: 0px;
+    }
+    .about-img{
+        align-self: center;
+    }
+    .about{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-content{
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .about-head{
+        display: none;
+    }
+    .about-head1{
+        display: block;
+        font-size: 25px;
+        align-self: center;
+        margin: 15px;
+    }
+    .about-para{
+        font-size: 14px;
+        text-align: center;
+    }
+    .about-details{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .about ul li{
+        margin-right: 40px;
+        font-size: 16.5px;
+    }
+    .details-content{
+        margin-top: 5px;
+    }
+    .details-head{
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    .details-para{
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+    
+    /*--------------Services----------------*/
+    .service-content{
+        flex-direction: column;
+    }
+    .service{
+        padding: 10px;
+        padding-top: 0px;
+    }
+    .service1{
+        width: 70%;
+        padding: 20px;
+        margin: 15px;
+    }
+    .svhead{
+        font-size: 20px;
+    }
+    .spara{
+        font-size: 14px;
+    }
+    /*------------------My_WORK----------------------*/
+    
+    .work{
+        padding: 10px;
+    }
+    .work-head{
+        font-size: 25px;
+        margin: 0px;
+        margin-left: 30px;
+    }
+    .work-para{
+        margin-right: 20px;
+    }
+    .work1,.work2,.work3{
+        width: 75%;
+        height: 400px;
+        margin: 15px;
+    }
+    .work-content i{
+        font-size: 18px;
+        padding: 10px;
+    }
+    .work-content{
+        flex-direction: column;
+    }
+    .whead{
+        font-size: 20px;
+    }
+    .wpara{
+        font-size: 15px;
+    }
+    .work-details{
+        height: 400px;
+    }
+    .work-button{
+        padding: 6px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    /*--------------contact------------------*/
+    .contact{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .contact-button{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    .contact .contact-left{
+        margin-left: 15px;
+    }
+}
+@media (max-width:400px){
+    .dsn{
+        height: 230px;
+        width: 330px;
+        margin-top: 33%;
+    }
+    .hero-img img{
+        height: 280px;
+        border-radius: 20%;
+        margin-right: 0px;
+    }
+    .about-img img{
+        height: 200px;
+        margin: 10px;
+        margin-top: 0px;
+    }
+    .about{
+        padding: 0px;
+        flex-direction: column;
+    }
+    .about-para{
+        font-size: 13px;
+    }
+}
+@media (max-width:350px){
+    .dsn{
+        height: 200px;
+        width: 300px;
+        margin-top: 33%;
+    }
+    .hero-img img{
+        height: 280px;
+        border-radius: 20%;
+        margin-right: 0px;
     }
 }
