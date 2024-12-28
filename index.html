@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+    <div id="progress-bar"></div>
+    <div id="top-btn" onclick="toTop()"><i class="fa-solid fa-arrow-up"></i></div>
     <nav>
         <div class="logo"> 
             <img class="logo-img" src="images/logo1.png" alt="">
@@ -17,16 +19,16 @@
         <div class="links">
             <ul id="links">
                 <i onclick="hideMenu()" id="cross" class="fa-solid fa-x"></i>
-                <li class="link active"><a href="">Home</a></li>
-                <li class="link"><a href="">About</a></li>
-                <li class="link"><a href="">Skills</a></li>
-                <li class="link"><a href="">Projects</a></li>
-                <li class="link"><a href="">Contact</a></li>
+                <li class="link active"><a href="#hero-section">Home</a></li>
+                <li class="link"><a href="#about-section">About</a></li>
+                <li class="link"><a href="#service-section">Skills</a></li>
+                <li class="link"><a href="#work-section">Projects</a></li>
+                <li class="link"><a href="#contact-section">Contact</a></li>
             </ul>
         </div>
         <i onclick="showMenu()" id="bars" class="fa-solid fa-bars"></i>
     </nav>
-    <section class="hero-section">
+    <section id="hero-section" class="hero-section">
         <div class="hero">
             <div class="hero-content">
                 <h2 class="hero-head">Hey I'm <span class="name">Abhiram</span></h2>
@@ -46,7 +48,7 @@
             </div>
         </div>
     </section>
-    <section class="about-section">
+    <section id="about-section" class="about-section">
         <div class="about">
             <h3 class="about-head1">About Me</h3>
             <div class="about-img">
@@ -89,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="service-section">
+    <section class="service-section" id="service-section">
         <div class="service">
             <h3 class="service-head">My Services</h3>
             <div class="service-content">
@@ -111,7 +113,7 @@
             </div>
         </div>
     </section>
-    <section class="work-section">
+    <section class="work-section" id="work-section">
         <div class="work">
             <h3 class="work-head">My Work</h3>
             <p class="work-para">A showcase of my journey in web development and the projects I've built along the way. From dynamic websites to interactive applications, each project reflects my passion for creating functional and engaging web experiences.</p>
@@ -141,7 +143,7 @@
             <button class="work-button">See More</button>
         </div>
     </section>
-    <section class="contact-section">
+    <section id="contact-section" class="contact-section">
         <div class="contact">
             <div class="contact-left">
                 <h3 class="contact-head">Contact Me</h3>
@@ -163,10 +165,12 @@
                 <button class="contact-button">Download Resume</button>
             </div>
             <div class="contact-right">
-                <form action="">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a65d0036-4840-46be-b59c-cb05d782238d">
                     <input class="name" name="name" type="text" placeholder="Your Name" required>
                     <input class="mail" name="mail" type="mail" placeholder="Your Email" required>
-                    <textarea class="message" rows="7" placeholder="Message"></textarea>
+                    <textarea name="message" class="message" rows="7" placeholder="Message"></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                     <button type="submit" class="contact-button">Submit</button>
                 </form>
             </div>

@@ -5,6 +5,21 @@ let edu=document.getElementById('edu');
 let Experience=document.getElementById('Experience');
 let Skill=document.getElementById('Skill');
 let Education=document.getElementById('Education');
+window.onscroll=function(){
+    progressBar();
+    scrollTopFunction();
+};
+function scrollTopFunction(){
+    if(document.body.scrollTop || document.documentElement.scrollTop>30){
+        document.getElementById("top-btn").style.display="flex";
+    }else{
+        document.getElementById("top-btn").style.display="none";
+    }
+}
+function toTop(){
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+}
 function showMenu(){
     links.style.display='flex';
     links.style.right="0px";
@@ -46,4 +61,11 @@ function showSkills(){
     Experience.style.setProperty('--after-display', 'block');
     Skill.style.setProperty('--after-display','none');
     Education.style.setProperty('--after-display','block');
+}
+
+function progressBar(){
+    var scroll=document.body.scrollTop || document.documentElement.scrollTop;
+    var height=document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled=(scroll/height)*100;
+    document.getElementById('progress-bar').style.width=scrolled+"%";
 }
